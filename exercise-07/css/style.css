@@ -1,4 +1,6 @@
 /* stylesheet for constitution.html */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Matemasie&display=swap');
 body {
     color: red;
   }
@@ -43,4 +45,24 @@ a:hover{
 a,
 a:active{
     color:rgb(245,188,78)
+}
+
+h1,h2{
+    text-shadow:#e0dc;
+}
+
+h1,h2,h3{
+    font-family:"anton sc","serif"
+}
+
+p{
+    font-family:"matemasie","serif"
+}
+
+h1{
+    text-decoration: underline;
+}
+
+body > p{
+ font-weight: 700px;
 }
