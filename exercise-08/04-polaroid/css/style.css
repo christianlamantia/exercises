@@ -8,17 +8,30 @@ border-bottom: 1px solid black;
 border-right: 1px solid black;
 }
 
-buzz-aldrin{
-    margin-left: 170px;
-    
+#box {
+    max-width: 432px;
+    max-height: 430px;
+}
 
+#image {
+border-top: 1px solid black;
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+border-right: 1px solid black;
+}
+
+#box {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
 }
 
 h1 {
     font-family: gugi;
 }
 
-figcaption {
-    font-family:"shadows-into-light";
+p {
+    font-family:"shadows-into-light", ;
 
 }
