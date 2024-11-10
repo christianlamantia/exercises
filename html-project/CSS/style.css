@@ -133,7 +133,10 @@ img{
     background-color:rgba(2, 145, 95, 0.46);
     border: 3px solid rgba(0,0,0,1);
     padding:10px;
+}
 
+#geo-title{
+    font-size:30px;
 }
 
 #geo-heading > h2{
@@ -182,7 +185,7 @@ img{
 
 #land-use{
     padding-left:175px;
-    padding-right:100px;
+    padding-right:175px;
 
 }
 
@@ -203,6 +206,8 @@ img{
     grid-template-rows: 0.25fr 1fr 0.5fr;
     border: 3px solid rgba(0,0,0,1);
     padding:10px;
+    margin:auto;
+    max-height:auto;
 }
 
 #economic-overview{
@@ -214,16 +219,29 @@ img{
     padding:10px;
 }
 
+#economy-heading{
+    font-size:30px;
+}
+
 #industrial-output{
+    max-height: 426px;
     grid-column: 1;
     grid-row:2;
     text-align: center;
     background-color:rgba(105, 186, 158, 0.46);
     border: 3px solid rgba(0,0,0,1);
-    padding:10px;
+    
+}
+
+#industry-list{
+    padding-left:175px;
+    padding-top: 7px;
+    padding-right:175px;
+ 
 }
 
 #exports{
+    max-height: 426px;
     grid-column: 2;
     grid-row:2;
     text-align: center;
@@ -232,6 +250,20 @@ img{
     padding:10px;
 }
 
+.export-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+#export-list{
+    grid-column:1;
+    grid-row:1;
+}
+#export-partners{
+    grid-column:2;
+    grid-row:1;
+}
 #poverty{
     grid-column: 1;
     grid-row:3;
@@ -239,10 +271,44 @@ img{
     background-color:rgba(105, 186, 158, 0.46);
     border: 3px solid rgba(0,0,0,1);
     padding:10px;
+    max-height: 426px;
+}
+
+.import-grid{
+display:grid;
+grid-template-columns:2;
+grid-template-rows:1;
+}
+
+#import-partners{
+    grid-column: 1;
+    grid-row:1;
+}
+
+#import-commodities{
+    grid-column:2;
+    grid-row:1;
+}
+
+.poverty-grid{
+    display:grid;
+    grid-template-columns:2;
+    grid-template-rows:1;
+}
+
+#poverty-list{
+    grid-column:1;
+    grid-row:1;
+}
+
+#unemployment-rate{
+    grid-column:2;
+    grid-row:1;
 }
 
 #imports{
     grid-column: 2;
+    max-height: 426px;
     grid-row:3;
     text-align: center;
     background-color:rgba(105, 186, 158, 0.46);
