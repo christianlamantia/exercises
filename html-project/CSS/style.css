@@ -2,38 +2,251 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Chewy&family=Gugi&family=Matemasie&family=Shadows+Into+Light&display=swap');
 
 body {
+border: 3px solid rgba(0,0,0,1);
+padding:20px;
 font-family: "Quicksand", Georgia, sans-serif;
 font-weight: 500;
+font-size: 20px;
+margin: auto;
+min-width:890px;
 }
 
-h1{
+h1 {
     font-family:"Chewy", Georgia, san-serif;
-    font-size: 40px;
-    line-height: 1.3;
+    font-size: 50px;
+
 }
 
 header, 
 footer {
     background-color:rgba(102,187,145,0.46);
+    border: 3px solid rgba(0,0,0,1);
 }
 
 main{
-    background-color:rgba(105, 186, 158, 0.46);
+    margin:0 auto;
+    border: 3px solid rgba(0,0,0,1);
 }
+
 
 a, 
 a:visited{
-    color:rgba(143,55,0,0.8);
-}
-
-a,
-a:link{
-    color:rgba(255,128,0,0.8);
+    color:rgba(126, 42, 236, 0.8);
 }
 
 a, 
-a:active{
-    color:rgba(155,210,0,0.8);
+a:default{
+    color:rgba(0, 0, 0, 0.8);
+}
+a,
+a:link{
+    color:rgba(10, 132, 188, 0.706);
 }
 
+a, 
+a:hover{
+    color:rgba(255, 255, 255, 0.8);
+}
+a, 
+a:active{
+    color:rgb(123, 251, 255);
+}
+#nation-description{
+    grid-area:nation-description;
+    grid-column: 1/3;
+    grid-row:1;
+    text-align: center;
+    font-size: 30px;
+    background-color:rgba(2, 145, 95, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#historical-origins{
+grid-area: historical-origins;
+grid-column:1;
+grid-row:2;
+background-color:rgba(105, 186, 158, 0.46);
+border: 3px solid rgba(0,0,0,1);
+padding:10px;
+}
+
+#rooftops{
+grid-area:rooftops;
+grid-column:2;
+grid-row: 2;
+background-color:rgba(105, 186, 158, 0.46);
+border: 3px solid rgba(0,0,0,1);
+padding:10px;
+}
+
+#key-events{
+grid-area:key-events;
+grid-column: 1;
+grid-row:3;
+background-color:rgba(105, 186, 158, 0.46);
+border: 3px solid rgba(0,0,0,1);
+padding:10px;
+
+}
+
+#capital-info{
+    grid-area:capital-info;
+    grid-column: 2;
+    grid-row: 3;
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+img{
+    max-width: 500px;
+    max-height: 700px;
+    border: 3px solid rgba(0,0,0,1);
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+}
+
+.overview{
+    display:grid;
+    text-align:center;
+    grid-row-gap: 20px;
+    grid-column-gap:20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    border: 3px solid rgba(0,0,0,1);
+}
+
+#geography{
+    display:grid;
+    text-align:center;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 0.5fr;
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#geo-heading{
+    grid-column: 1/span 2;
+    grid-row:1;
+    text-align: center;
+    background-color:rgba(2, 145, 95, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+
+}
+
+#geo-heading > h2{
+    font-size: 30px;
+}
+
+#map{
+    grid-column: 1;
+    grid-row:2;
+    text-align: center;
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#area{
+    grid-column: 2;
+    grid-row:2;
+    text-align: center;
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#area-table{
+    max-width: 350px;
+    padding-left: 175px;
+}
+
+#climate{
+    grid-column: 1;
+    grid-row:2;
+    text-align: center; 
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#population{
+    grid-column: 1;
+    grid-row:3;
+    text-align: center; 
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+}
+
+#land-use{
+    padding-left:175px;
+    padding-right:100px;
+
+}
+
+#natural-hazards{
+    grid-column: 2;
+    grid-row:3;
+    text-align: center;  
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#economy{
+    display:grid;
+    text-align:center;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 0.5fr;
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#economic-overview{
+    grid-column: 1/span 2;
+    grid-row:1;
+    text-align: center;
+    background-color:rgba(2, 145, 95, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#industrial-output{
+    grid-column: 1;
+    grid-row:2;
+    text-align: center;
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#exports{
+    grid-column: 2;
+    grid-row:2;
+    text-align: center;
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#poverty{
+    grid-column: 1;
+    grid-row:3;
+    text-align: center;
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
+
+#imports{
+    grid-column: 2;
+    grid-row:3;
+    text-align: center;
+    background-color:rgba(105, 186, 158, 0.46);
+    border: 3px solid rgba(0,0,0,1);
+    padding:10px;
+}
 

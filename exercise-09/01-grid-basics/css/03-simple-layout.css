@@ -43,6 +43,7 @@ main{
 grid-area: welcome;
 }
 
+
 footer{
   grid-area: copyright;
 }
