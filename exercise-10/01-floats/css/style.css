@@ -5,8 +5,18 @@ body {
   line-height: 1.25;
 }
 
+img{
+  float:left;
+  margin: 10px;
+}
+
 h2 {
   margin-top: 0;
+}
+
+.alt img{
+  float:right;
+  margin:10px;
 }
 
 main {
@@ -17,7 +27,7 @@ main {
 
 figure {
   margin: 32px 0 0 0;
-  overflow: auto;
+  overflow:auto;
 }
 
 figure img {
